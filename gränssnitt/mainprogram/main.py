@@ -32,7 +32,7 @@ class NormalDuck:
                 self.canvas.move(self.image,self.xvelocity,self.yvelocity)
     #Quack quack ljudets ursprung.
     def quack(self):
-        quack = vlc.MediaPlayer("sounds\\quacksound.mp3")
+        quack = vlc.MediaPlayer("Execute_duck\\gränssnitt\\sounds\\quacksound.mp3")
         quack.play()
 
     #Metod för när en anka blir klickad, den raderar sig själv :(
@@ -67,7 +67,7 @@ class PufferFish(NormalDuck):
         self.canvas.tag_bind(self.image, "<Button-1>", self.on_click)
 
     def quack(self):
-        puffer_quack = vlc.MediaPlayer("sounds\\puffersound.mp3")
+        puffer_quack = vlc.MediaPlayer("Execute_duck\\gränssnitt\\sounds\\puffersound.mp3")
         puffer_quack.play()
 
 def create_ducks():
@@ -146,9 +146,9 @@ def intro():
     quit_button.pack(pady=10)
 
 #Path to images, Path to dogE och vicdog är bilder som inte han göra nytta av.
-PATH_NORMAL_DUCK = "photos\\normalduck.png"
-PATH_SUBARU_DUCK = "photos\\subduck.png"
-PATH_PUFFER_FISH = "photos\\pufferfish.png"
+PATH_NORMAL_DUCK = "Execute_duck\\gränssnitt\\photos\\normalduck.png"
+PATH_SUBARU_DUCK = "Execute_duck\\gränssnitt\\photos\\subduck.png"
+PATH_PUFFER_FISH = "Execute_duck\\gränssnitt\\photos\\pufferfish.png"
 
 #Övriga definitioner
 WIDTH = 700
